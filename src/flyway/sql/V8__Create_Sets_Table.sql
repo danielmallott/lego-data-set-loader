@@ -1,0 +1,7 @@
+CREATE TABLE dbo.Sets (
+    SetNumber VARCHAR(20) NOT NULL CONSTRAINT PK_Sets PRIMARY KEY CLUSTERED,
+    SetName VARCHAR(256) NOT NULL,
+    ReleaseYear CHAR(4) NOT NULL,
+    ThemeId INT NOT NULL CONSTRAINT FK_Sets_Themes FOREIGN KEY REFERENCES dbo.Themes(ThemeId),
+    NumberOfParts INT NOT NULL
+);

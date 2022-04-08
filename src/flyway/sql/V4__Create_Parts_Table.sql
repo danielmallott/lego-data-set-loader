@@ -1,0 +1,6 @@
+CREATE TABLE dbo.Parts (
+    PartNumber VARCHAR(20) NOT NULL CONSTRAINT PK_Parts PRIMARY KEY CLUSTERED,
+    PartName VARCHAR(250) NOT NULL,
+    PartCategoryId INT NOT NULL CONSTRAINT FK_Parts_PartCategories FOREIGN KEY REFERENCES dbo.PartCategories(PartCategoryId),
+    Material VARCHAR(250) NOT NULL
+);

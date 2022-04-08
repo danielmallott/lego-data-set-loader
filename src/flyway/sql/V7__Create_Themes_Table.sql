@@ -1,0 +1,5 @@
+CREATE TABLE dbo.Themes (
+    ThemeId INT NOT NULL CONSTRAINT PK_Themes PRIMARY KEY CLUSTERED,
+    ThemeName VARCHAR(42) NOT NULL,
+    ParentThemeId INT NULL CONSTRAINT FK_Themes_ParentTheme FOREIGN KEY REFERENCES dbo.Themes(ThemeId)
+);
