@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="LegoDataSetLoader.Data/LegoDataSetLoader.Data.csproj" />
+  <Project Path="LegoDataSetLoader.Program/LegoDataSetLoader.Program.csproj" />
+</Solution>
