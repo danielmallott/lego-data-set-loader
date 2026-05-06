@@ -13,7 +13,7 @@ namespace LegoDataSetLoader.Data.Models
         public string PartNumber { get; set; } = null!;
         public string PartName { get; set; } = null!;
         public int PartCategoryId { get; set; }
-        public string Material { get; set; }
+        public string Material { get; set; } = null!;
 
         public virtual PartCategory PartCategory { get; set; } = null!;
         public virtual ICollection<Element> Elements { get; set; }
